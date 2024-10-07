@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oeka - Gestion Intelligente de la Production</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Oeka</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <video autoplay muted loop id="background-video">
+                <source src="Blue Dark Blue Gradient Color and Style Video Background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h2>Libérez le potentiel de votre production avec Oeka</h2>
+                <p>Automatisez la gestion de votre production avec des outils d’intelligence artificielle pour PME et artisans.</p>
+                <a href="#presentation" class="btn">Découvrir</a>
+            </div>
+        </section>
+        
+
+        <section id="presentation" class="container">
+            <h2>Présentation</h2>
+            <p>Oeka est une plateforme innovante pour automatiser et optimiser la gestion de la production des PME malgaches.</p>
+        </section>
+
+        <!-- Section Fonctionnalités -->
+        <section id="fonctionnalites" class="container">
+            <h2>Fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Gestion des Stocks</h3>
+                    <button onclick="gererStock()">Gérer les Stocks</button>
+                    <p id="stockMessage">Stock actuel : <span id="stockLevel">100</span> unités</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Facturation Automatique</h3>
+                    <form id="facturationForm">
+                        <label for="produit">Produit:</label>
+                        <input type="text" id="produit" name="produit">
+                        <label for="prix">Prix (€):</label>
+                        <input type="number" id="prix" name="prix">
+                        <label for="quantite">Quantité:</label>
+                        <input type="number" id="quantite" name="quantite">
+                        <button type="button" onclick="genererFacture()">Générer Facture</button>
+                    </form>
+                    <p id="factureMessage"></p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analyse de la Performance</h3>
+                    <button onclick="afficherRapport()">Afficher Rapport</button>
+                    <p id="rapportMessage"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="temoignages" class="container">
+            <h2>Témoignages</h2>
+            <div class="testimonials">
+                <blockquote>
+                    <p>Oeka a transformé ma façon de gérer mon entreprise !</p>
+                    <cite>- Fabien R.</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contactez-nous</h2>
+            <p>Contactez-nous pour une démonstration gratuite.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Oeka. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
